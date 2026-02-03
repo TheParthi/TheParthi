@@ -68,9 +68,6 @@
 
 ---
 
-
----
-
 ## 🧠 Currently Learning
 - Advanced Spring Boot & Microservices  
 - Secure API Design & Cybersecurity  
