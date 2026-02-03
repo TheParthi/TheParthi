@@ -1,16 +1,23 @@
-## Hi there 👋
+## Hi, I'm Parthiban 👋
 
-<!--
-**TheParthi/TheParthi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### 👨‍💻 About Me
+- Full Stack Developer (Java, Spring Boot, React)
+- Interested in AI, Cloud, and Secure Systems
+- Hands-on with AWS & Azure
+- Strong in REST APIs, JWT, and database design
 
-Here are some ideas to get you started:
+### 🛠 Tech Stack
+- Backend: Java, Spring Boot, JPA, Hibernate
+- Frontend: React, TypeScript
+- Database: MySQL
+- Cloud: AWS, Azure
+- Tools: Git, Postman, Docker (basic)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 📌 Featured Projects
+- TrustLance – Freelance Marketplace (Spring Boot + React)
+- Malware Detection using AI (Python, ML)
+- Loan Risk Analysis System
+
+### 📫 Contact
+- LinkedIn: <your link>
+- Portfolio: <your site>
