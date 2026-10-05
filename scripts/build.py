@@ -36,6 +36,12 @@ No SVG filters. A soft glow is a radial gradient, which looks the same as a
 blurred circle and costs nothing; a Gaussian blur is among the most expensive
 things a browser rasterises, and an animated element under one is re-blurred
 every frame. Animation is kept to small regions.
+
+And nothing animates forever. An SVG shown through <img> is re-rasterised in
+full on every animation frame - the hero costs ~14ms a frame at 2x - so every
+animation here runs for about 30 seconds and then settles: the motion is there
+when someone lands on the page, and after that the page costs nothing.
+Measured, the old hero took ~66ms per frame, every frame, indefinitely.
 """
 from __future__ import annotations
 
@@ -69,6 +75,8 @@ FULL = PAGE - 2 * PAD               # 1200
 HALF = PAGE // 2 - 2 * PAD          # 588
 THIRD = PAGE // 3 - 2 * PAD         # 384
 QUARTER = PAGE // 4 - 2 * PAD       # 282
+
+SETTLE = 30                         # seconds of motion before everything comes to rest
 
 # ── Tokens ───────────────────────────────────────────────────────────────────
 BG0, BG1 = "#0B1120", "#111A33"
@@ -192,7 +200,7 @@ def live_pill(x, y, label="LIVE ON GOOGLE PLAY", size=14):
     return (f'<g transform="translate({x:.1f},{y})"><rect width="{w:.1f}" height="34" rx="17" fill="{GREEN}" '
             f'fill-opacity="0.12" stroke="{GREEN}" stroke-opacity="0.45"/>'
             f'<circle cx="18" cy="17" r="5" fill="{GREEN}"><animate attributeName="opacity" values="1;0.3;1" '
-            f'dur="2.2s" repeatCount="indefinite"/></circle>'
+            f'dur="2.2s" repeatCount="{SETTLE / 2.2:.0f}" fill="freeze"/></circle>'
             f'<text x="32" y="{17 + size * 0.36:.1f}" font-family="{MONO}" font-size="{size}" letter-spacing="1" '
             f'fill="#6EE7B7">{label}</text></g>'), w
 
@@ -265,7 +273,7 @@ def build_hero():
         texts.append(
             f'<text x="{tx}" y="290" font-family="{MONO}" font-size="{fs}" fill="#A5B4FC" opacity="{1 if i == 0 else 0}">'
             f'<tspan fill="#64748B">$ </tspan>{esc(p)}'
-            f'<animate attributeName="opacity" values="{ov}" keyTimes="{okt}" dur="15s" repeatCount="indefinite"/></text>')
+            f'<animate attributeName="opacity" values="{ov}" keyTimes="{okt}" dur="15s" repeatCount="2"/></text>')
 
     defs = (
         f'<linearGradient id="nameFill" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF"/>'
@@ -276,11 +284,11 @@ def build_hero():
         # not animate still shows a complete line.
         f'<clipPath id="typeClip"><rect x="{tx}" y="262" width="{widths[0]:.0f}" height="40">'
         f'<animate attributeName="width" values="{";".join(f"{v:.0f}" for v in wv)}" keyTimes="{kts}" '
-        f'dur="15s" repeatCount="indefinite"/></rect></clipPath>')
+        f'dur="15s" repeatCount="2"/></rect></clipPath>')
     body = [
         f'<g transform="translate(66,48)"><rect width="230" height="36" rx="18" fill="{GREEN}" fill-opacity="0.12" '
         f'stroke="{GREEN}" stroke-opacity="0.45"/><circle cx="20" cy="18" r="5.2" fill="#34D399">'
-        f'<animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="indefinite"/></circle>'
+        f'<animate attributeName="opacity" values="1;0.25;1" dur="2.2s" repeatCount="{SETTLE / 2.2:.0f}" fill="freeze"/></circle>'
         f'<text x="36" y="23.4" font-family="{MONO}" font-size="15" letter-spacing="1.2" fill="#6EE7B7">OPEN TO SDE ROLES</text></g>',
         f'<text x="62" y="160" font-family="{SANS}" font-size="58" font-weight="800" letter-spacing="-1.2" '
         f'fill="url(#nameFill)">Parthiban Gunasekaran</text>',
@@ -290,8 +298,9 @@ def build_hero():
         f'<g clip-path="url(#typeClip)">{"".join(texts)}</g>',
         f'<rect x="{tx + 4 + widths[0]:.0f}" y="268" width="2.6" height="27" fill="#67E8F9">'
         f'<animate attributeName="x" values="{";".join(f"{v:.0f}" for v in cx)}" keyTimes="{kts}" '
-        f'dur="15s" repeatCount="indefinite"/>'
-        f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/></rect>',
+        f'dur="15s" repeatCount="2"/>'
+        f'<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.5;0.5;1" dur="1.1s" '
+        f'repeatCount="{SETTLE / 1.1:.0f}" fill="freeze"/></rect>',
         # Orbit - small, so animating it is cheap.
         '<g transform="translate(1010,180)">'
         '<circle r="100" fill="none" stroke="#64748B" stroke-opacity="0.7"/>'
@@ -299,11 +308,11 @@ def build_hero():
         '<circle r="36" fill="none" stroke="#64748B" stroke-opacity="0.4"/>'
         '<circle r="14" fill="#818CF8"/>'
         '<g><circle cx="100" r="7.5" fill="#67E8F9"/><animateTransform attributeName="transform" type="rotate" '
-        'from="0" to="360" dur="14s" repeatCount="indefinite"/></g>'
+        'from="0" to="360" dur="14s" repeatCount="2" fill="freeze"/></g>'
         '<g><circle cx="68" r="6.5" fill="#A855F7"/><animateTransform attributeName="transform" type="rotate" '
-        'from="140" to="500" dur="9s" repeatCount="indefinite"/></g>'
+        'from="140" to="500" dur="9s" repeatCount="3" fill="freeze"/></g>'
         '<g><circle cx="36" r="5" fill="#F472B6"/><animateTransform attributeName="transform" type="rotate" '
-        'from="300" to="-60" dur="6.5s" repeatCount="indefinite"/></g></g>',
+        'from="300" to="-60" dur="6.5s" repeatCount="4" fill="freeze"/></g></g>',
     ]
     write("hero.svg", card(cw, h, "".join(body), label="Parthiban Gunasekaran, Full Stack Developer. Open to SDE roles.",
                            extra_defs=defs, rx=22,
@@ -384,8 +393,8 @@ def build_about():
                      f'fill="{TEXT}">{highlight(line)}</text>')
     cy = first + (len(CODE) - 1) * lh
     p.append(f'<rect x="{codex + 15}" y="{cy - 19}" width="2.6" height="25" fill="#67E8F9">'
-             f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" '
-             f'repeatCount="indefinite"/></rect>')
+             f'<animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.5;0.5;1" dur="1.1s" '
+             f'repeatCount="{SETTLE / 1.1:.0f}" fill="freeze"/></rect>')
     mx = cw - 124
     p.append(f'<rect x="{mx - 10}" y="{top + 14}" width="108" height="{len(CODE) * 8 + 14}" rx="5" '
              f'fill="#FFFFFF" fill-opacity="0.035" stroke="#FFFFFF" stroke-opacity="0.06"/>')
@@ -451,7 +460,7 @@ def map_panel(mx, my, mw, mh):
         f'<path d="{ROUTE}" fill="none" stroke="url(#routeG)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>',
         f'<path d="{ROUTE}" fill="none" stroke="#FFFFFF" stroke-opacity="0.75" stroke-width="2.2" stroke-linecap="round" '
         f'stroke-dasharray="1 13"><animate attributeName="stroke-dashoffset" from="0" to="-28" dur="0.9s" '
-        f'repeatCount="indefinite"/></path>',
+        f'repeatCount="{SETTLE / 0.9:.0f}" fill="freeze"/></path>',
         '<circle cx="70" cy="318" r="20" fill="#22C55E" fill-opacity="0.18"/>',
         '<circle cx="70" cy="318" r="10" fill="#22C55E" stroke="#FFFFFF" stroke-width="3"/>',
         label(94, 301, 196, "#4ADE80", "Pickup · Madiwala"),
@@ -461,7 +470,7 @@ def map_panel(mx, my, mw, mh):
         # Hidden unless the renderer animates, so a static render never shows
         # the vehicle parked at 0,0.
         f'<g opacity="0"><set attributeName="opacity" to="1" begin="0s"/>'
-        f'<animateMotion path="{ROUTE}" rotate="auto" dur="9s" repeatCount="indefinite" keyPoints="0;1;1" '
+        f'<animateMotion path="{ROUTE}" rotate="auto" dur="9s" repeatCount="3" fill="freeze" keyPoints="0;1;1" '
         f'keyTimes="0;0.86;1" calcMode="linear"/>'
         f'<circle r="20" fill="#67E8F9" fill-opacity="0.18"/>'
         f'<path d="M12 0L-10 9.5L-5 0L-10 -9.5Z" fill="#67E8F9" stroke="#FFFFFF" stroke-width="2.2" '
