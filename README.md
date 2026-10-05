@@ -33,7 +33,7 @@
 
 <img src="assets/stack.svg" width="100%" alt="Tech stack. Languages: Java, TypeScript, Python, SQL. Backend: Spring Boot, NestJS, Prisma, Socket.IO, REST and JWT. Mobile and web: React Native, React, Next.js, Tailwind CSS. AI and LLM: GenAI, LangChain, LangGraph, RAG, Genkit, ChromaDB. Data: PostgreSQL, PostGIS, Redis, MySQL, Supabase. Cloud and DevOps: AWS, Azure, Docker, GitHub Actions, nginx." />
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-04-dark.svg" /><img src="assets/h-04-light.svg" width="100%" alt="04 · Projects" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-02-dark.svg" /><img src="assets/h-02-light.svg" width="100%" alt="02 · Projects" /></picture>
 
 <a href="https://github.com/TheParthi/Malware-Detection-GenAI"><img src="assets/project-malware.svg" width="50%" alt="Malware Detection with GenAI — static analysis, Malware/Benign classification and automated incident response. Python." /></a><a href="https://github.com/TheParthi/Email_rag"><img src="assets/project-email-rag.svg" width="50%" alt="AI Support Email Agents — LangGraph agents that categorise support email and answer with RAG over the Gmail API. Python." /></a>
 
@@ -41,7 +41,7 @@
 
 <a href="https://github.com/TheParthi/Freelancer_Marketplace_TrustLance"><img src="assets/project-trustlance.svg" width="50%" alt="TrustLance — freelance marketplace with role-based access and authenticated APIs. Next.js, Supabase, Firebase." /></a><a href="https://github.com/TheParthi/secure-cloud-storage-backup-system"><img src="assets/project-cloud-backup.svg" width="50%" alt="Secure Cloud Backup — data-protection-first storage and backup on AWS S3 and EC2." /></a>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-05-dark.svg" /><img src="assets/h-05-light.svg" width="100%" alt="05 · Activity" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-03-dark.svg" /><img src="assets/h-03-light.svg" width="100%" alt="053· Activity" /></picture>
 
 <a href="https://github.com/TheParthi"><img src="assets/activity.svg" width="100%" alt="Contribution activity over the last 12 months: a heatmap, active days, best month and longest streak." /></a>
 
