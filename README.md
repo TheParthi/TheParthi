@@ -1,178 +1,86 @@
-<!-- ════════════════════════  HERO  ════════════════════════ -->
+<!--
+  Every image on this page is drawn by scripts/build.py and committed to assets/.
+  The activity, languages and footer cards are regenerated nightly from the
+  GitHub API by .github/workflows/profile.yml. To change the design, edit the
+  script - not the SVGs, which are overwritten on the next run.
+-->
+
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,45:8B5CF6,100:06B6D4&height=210&section=header&text=Parthiban%20Gunasekaran&fontSize=46&fontColor=FFFFFF&fontAlignY=34&desc=Full%20Stack%20Developer&descSize=18&descAlignY=54&animation=fadeIn" alt="banner" />
+<img src="assets/hero.svg" width="100%" alt="Parthiban Gunasekaran — Full Stack Developer. Open to SDE roles." />
 
-<a href="https://parthibanportfolio.netlify.app">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2800&pause=700&color=6366F1&center=true&vCenter=true&width=620&height=48&lines=Java+%7C+Spring+Boot+%7C+React;Building+scalable+%26+secure+backends;AWS+%26+Azure+cloud+native;Always+shipping%2C+always+learning" alt="typing" />
-</a>
-
-<br/>
-
-<a href="https://www.linkedin.com/in/parthiban-gunasekaran-1159a5282"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin" /></a>
-<a href="https://parthibanportfolio.netlify.app"><img src="https://img.shields.io/badge/Portfolio-6366F1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="portfolio" /></a>
-<a href="mailto:gunasekaranparthiban31@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="email" /></a>
-<a href="https://github.com/TheParthi?tab=followers"><img src="https://img.shields.io/github/followers/TheParthi?style=for-the-badge&color=06B6D4&labelColor=1E293B&logo=github&logoColor=white" alt="followers" /></a>
-<img src="https://komarev.com/ghpvc/?username=TheParthi&style=for-the-badge&color=8B5CF6&label=VIEWS" alt="views" />
+<a href="https://www.linkedin.com/in/parthiban-gunasekaran-1159a5282"><img src="assets/btn-linkedin.svg" width="24%" alt="LinkedIn" /></a>
+<a href="https://parthibanportfolio.netlify.app"><img src="assets/btn-portfolio.svg" width="24%" alt="Portfolio" /></a>
+<a href="mailto:gunasekaranparthiban31@gmail.com"><img src="assets/btn-email.svg" width="24%" alt="Email me" /></a>
+<a href="https://github.com/TheParthi?tab=repositories"><img src="assets/btn-github.svg" width="24%" alt="All repositories" /></a>
 
 </div>
 
 <br/>
 
-<!-- ════════════════════════  ABOUT  ════════════════════════ -->
-## &nbsp;👨‍💻&nbsp; About Me
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/h-01-dark.svg" />
+  <img src="assets/h-01-light.svg" width="100%" alt="01 · About" />
+</picture>
 
-<table>
-<tr>
-<td width="50%" valign="top">
+<img src="assets/about.svg" width="100%" alt="About me, written as a Java class: building NXA Ride at Dendo; languages Java, TypeScript, Python, SQL; backend Spring Boot, NestJS, Prisma, Socket.IO; mobile React Native, React, Next.js; AI GenAI, LangChain, LangGraph, RAG; cloud AWS, Azure, Docker, GitHub Actions; open to SDE and Full-Stack roles." />
 
-**Full Stack Developer** building production systems end to end — from database schema to deployed cloud infrastructure.
+<br/><br/>
 
-Strongest in **Java and Spring Boot** on the backend, **React and TypeScript** on the front, with hands-on **AWS** and **Microsoft Azure**.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/h-02-dark.svg" />
+  <img src="assets/h-02-light.svg" width="100%" alt="02 · Work" />
+</picture>
 
-Interested in **AI-powered systems**, **cybersecurity**, and backend design that stays fast as it grows.
+<a href="https://play.google.com/store/apps/details?id=com.nexaride.userapp"><img src="assets/work-nxaride.svg" width="100%" alt="NXA Ride — ride-hailing and parcel delivery, built at Dendo. Rider app, driver app, admin console and backend: live booking, real-time tracking over WebSockets, parcel handover codes and UPI payments. React Native, NestJS, PostgreSQL + PostGIS, Redis, Socket.IO, Google Maps, AWS and Azure." /></a>
 
-</td>
-<td width="50%" valign="top">
-
-| | |
-|:--|:--|
-| 🎯 **Focus** | Java · Spring Boot · React · TypeScript |
-| ☁️ **Cloud** | AWS · Microsoft Azure |
-| 🔐 **Core** | REST APIs · JWT auth · DB architecture |
-| 🧠 **Exploring** | GenAI · Microservices · Secure design |
-| 💼 **Status** | Open to SDE / Full-Stack roles |
-| 📍 **Reach me** | gunasekaranparthiban31@gmail.com |
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<!-- ════════════════════════  STACK  ════════════════════════ -->
-## &nbsp;🧰&nbsp; Tech Stack
-
-<table align="center">
-<tr>
-  <td align="center" width="150"><b>Backend</b></td>
-  <td><img src="https://skillicons.dev/icons?i=java,spring,hibernate,maven,nodejs" alt="backend" /></td>
-</tr>
-<tr>
-  <td align="center"><b>Frontend</b></td>
-  <td><img src="https://skillicons.dev/icons?i=react,ts,js,html,css,tailwind" alt="frontend" /></td>
-</tr>
-<tr>
-  <td align="center"><b>Data</b></td>
-  <td><img src="https://skillicons.dev/icons?i=mysql,postgres,mongodb,redis" alt="data" /></td>
-</tr>
-<tr>
-  <td align="center"><b>Cloud &amp; DevOps</b></td>
-  <td><img src="https://skillicons.dev/icons?i=aws,azure,docker,githubactions,linux" alt="cloud" /></td>
-</tr>
-<tr>
-  <td align="center"><b>Tools</b></td>
-  <td><img src="https://skillicons.dev/icons?i=git,github,postman,idea,vscode" alt="tools" /></td>
-</tr>
-</table>
-
-<br/>
-
-<!-- ════════════════════════  ANALYTICS  ════════════════════════ -->
-## &nbsp;📊&nbsp; GitHub Analytics
+<a href="https://www.dendo.in"><img src="assets/work-dendo.svg" width="100%" alt="Dendo — food, groceries and parcels, delivered daily. NXA Ride is a Dendo product." /></a>
 
 <div align="center">
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=TheParthi&show_icons=true&hide_border=true&rank_icon=github&include_all_commits=true&count_private=true&bg_color=00000000&title_color=6366F1&text_color=8B949E&icon_color=06B6D4" alt="stats" />
-<img width="44%" src="https://streak-stats.demolab.com?user=TheParthi&hide_border=true&background=00000000&stroke=30363D&ring=6366F1&fire=8B5CF6&currStreakLabel=6366F1&sideLabels=8B949E&dates=8B949E&currStreakNum=8B949E&sideNums=8B949E" alt="streak" />
-
-<img width="44%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TheParthi&layout=compact&langs_count=8&hide_border=true&bg_color=00000000&title_color=6366F1&text_color=8B949E" alt="languages" />
-
-<img width="96%" src="https://github-readme-activity-graph.vercel.app/graph?username=TheParthi&bg_color=00000000&color=6366F1&line=06B6D4&point=8B5CF6&area=true&area_color=6366F1&hide_border=true" alt="activity" />
-
-<img src="https://github-profile-trophy.vercel.app/?username=TheParthi&theme=nord&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=7" alt="trophies" />
-
+<a href="https://play.google.com/store/apps/details?id=com.nexaride.userapp"><img src="assets/store-nxaride.svg" width="32%" alt="NXA Ride on Google Play" /></a>
+<a href="https://play.google.com/store/apps/details?id=com.nexadriver"><img src="assets/store-nxadriver.svg" width="32%" alt="NXA Ride Partner on Google Play" /></a>
+<a href="https://play.google.com/store/apps/details?id=com.dendo.update.user"><img src="assets/store-dendo.svg" width="32%" alt="Dendo on Google Play" /></a>
 </div>
 
 <br/>
 
-<!-- ════════════════════════  PROJECTS  ════════════════════════ -->
-## &nbsp;🚀&nbsp; Featured Projects
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/h-03-dark.svg" />
+  <img src="assets/h-03-light.svg" width="100%" alt="03 · Stack" />
+</picture>
 
-<table>
-<tr>
-  <th align="left" width="200">Project</th>
-  <th align="left">What it does</th>
-  <th align="left" width="240">Stack</th>
-</tr>
-<tr>
-  <td valign="top"><b>🔐 TrustLance</b><br/><sub>Freelance marketplace</sub></td>
-  <td valign="top">Full-stack platform with role-based access control, JWT authentication and RESTful APIs.</td>
-  <td valign="top">
-    <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
-    <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
-    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
-    <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" />
-  </td>
-</tr>
-<tr>
-  <td valign="top"><b>🦠 Malware Detection</b><br/><sub>GenAI threat analysis</sub></td>
-  <td valign="top">AI-driven malware analysis and threat classification system.</td>
-  <td valign="top">
-    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-    <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" />
-    <img src="https://img.shields.io/badge/Security-C41E3A?style=flat-square&logo=hackthebox&logoColor=white" />
-  </td>
-</tr>
-<tr>
-  <td valign="top"><b>📈 Loan Risk Analysis</b><br/><sub>Credit scoring</sub></td>
-  <td valign="top">Predictive risk assessment using data-driven classification models.</td>
-  <td valign="top">
-    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-    <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" />
-    <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" />
-  </td>
-</tr>
-</table>
+<img src="assets/stack.svg" width="100%" alt="Tech stack. Languages: Java, TypeScript, Python, SQL. Backend: Spring Boot, NestJS, Prisma, Socket.IO, REST and JWT. Mobile and web: React Native, React, Next.js, Tailwind CSS. AI and LLM: GenAI, LangChain, LangGraph, RAG, Genkit, ChromaDB. Data: PostgreSQL, PostGIS, Redis, MySQL, Supabase. Cloud and DevOps: AWS, Azure, Docker, GitHub Actions, nginx." />
 
-<br/>
+<br/><br/>
 
-<!-- ════════════════════════  EXTRAS  ════════════════════════ -->
-<details>
-<summary><b>&nbsp;🌱&nbsp; What I'm learning right now</b></summary>
-<br/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/h-04-dark.svg" />
+  <img src="assets/h-04-light.svg" width="100%" alt="04 · Projects" />
+</picture>
 
-| Area | Focus |
-|:--|:--|
-| **Spring ecosystem** | Advanced Spring Boot, Spring Cloud, microservice patterns |
-| **Security** | Secure API design, OWASP Top 10, threat modelling |
-| **Architecture** | Event-driven systems, AI + cloud-native design |
-
-</details>
-
-<details>
-<summary><b>&nbsp;📫&nbsp; How to reach me</b></summary>
-<br/>
-
-- **Email** — <a href="mailto:gunasekaranparthiban31@gmail.com">gunasekaranparthiban31@gmail.com</a>
-- **LinkedIn** — <a href="https://www.linkedin.com/in/parthiban-gunasekaran-1159a5282">parthiban-gunasekaran</a>
-- **Portfolio** — <a href="https://parthibanportfolio.netlify.app">parthibanportfolio.netlify.app</a>
-
-Open to Software Engineer and Full-Stack Developer roles.
-
-</details>
-
-<br/>
-
-<!-- ════════════════════════  SNAKE  ════════════════════════ -->
 <div align="center">
+<a href="https://github.com/TheParthi/Malware-Detection-GenAI"><img src="assets/project-malware.svg" width="49%" alt="Malware Detection with GenAI — static analysis, Malware/Benign classification and automated incident response. Python." /></a>
+<a href="https://github.com/TheParthi/Email_rag"><img src="assets/project-email-rag.svg" width="49%" alt="AI Support Email Agents — LangGraph agents that categorise mail and answer with RAG over the Gmail API. Python." /></a>
+<a href="https://github.com/TheParthi/Loanify"><img src="assets/project-loanify.svg" width="49%" alt="Loanify — AI-driven NBFC loan automation with customer and admin interfaces. TypeScript, Next.js, Genkit." /></a>
+<a href="https://github.com/TheParthi/Security_monitor"><img src="assets/project-security-monitor.svg" width="49%" alt="Blockchain Security Monitor — ERC-20 allowance monitoring with LLM risk analysis. Python." /></a>
+<a href="https://github.com/TheParthi/Freelancer_Marketplace_TrustLance"><img src="assets/project-trustlance.svg" width="49%" alt="TrustLance — freelance marketplace with role-based access and authenticated APIs. Next.js, Supabase, Firebase." /></a>
+<a href="https://github.com/TheParthi/secure-cloud-storage-backup-system"><img src="assets/project-cloud-backup.svg" width="49%" alt="Secure Cloud Backup — data-protection-first storage and backup on AWS S3 and EC2." /></a>
+</div>
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/h-05-dark.svg" />
+  <img src="assets/h-05-light.svg" width="100%" alt="05 · Activity" />
+</picture>
+
+<a href="https://github.com/TheParthi"><img src="assets/activity.svg" width="100%" alt="Contribution activity over the last 12 months, with a heatmap, active days, best month and longest streak." /></a>
+
+<img src="assets/languages.svg" width="100%" alt="Languages by bytes across the repositories I wrote." />
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TheParthi/TheParthi/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TheParthi/TheParthi/output/github-snake.svg" />
-  <img width="100%" alt="contribution snake" src="https://raw.githubusercontent.com/TheParthi/TheParthi/output/github-snake.svg" />
+  <img src="https://raw.githubusercontent.com/TheParthi/TheParthi/output/github-snake.svg" width="100%" alt="Contribution graph, eaten by a snake." />
 </picture>
 
-</div>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,55:8B5CF6,100:6366F1&height=130&section=footer" alt="footer" />
+<img src="assets/footer.svg" width="100%" alt="Every card on this page is drawn by scripts/build.py and refreshed nightly." />
