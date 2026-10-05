@@ -19,7 +19,7 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-01-dark.svg" /><img src="assets/h-01-light.svg" width="100%" alt="01 · About" /></picture>
 
-<img src="assets/about.svg" width="100%" alt="About me, written as a Java class: building NXA Ride at Dendo; languages Java, TypeScript, Python, SQL; backend Spring Boot, NestJS, Socket.IO; mobile React Native, React, Next.js; AI GenAI, LangChain, LangGraph, RAG; cloud AWS, Azure, Docker, GitHub Actions; open to SDE and Full-Stack roles." />
+<!-- <img src="assets/about.svg" width="100%" alt="About me, written as a Java class: building NXA Ride at Dendo; languages Java, TypeScript, Python, SQL; backend Spring Boot, NestJS, Socket.IO; mobile React Native, React, Next.js; AI GenAI, LangChain, LangGraph, RAG; cloud AWS, Azure, Docker, GitHub Actions; open to SDE and Full-Stack roles." />
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-02-dark.svg" /><img src="assets/h-02-light.svg" width="100%" alt="02 · Work" /></picture>
 
@@ -29,7 +29,7 @@
 
 <a href="https://play.google.com/store/apps/details?id=com.nexaride.userapp"><img src="assets/store-nxaride.svg" width="33.33%" alt="NXA Ride on Google Play" /></a><a href="https://play.google.com/store/apps/details?id=com.nexadriver"><img src="assets/store-nxadriver.svg" width="33.33%" alt="NXA Ride Partner on Google Play" /></a><a href="https://play.google.com/store/apps/details?id=com.dendo.update.user"><img src="assets/store-dendo.svg" width="33.33%" alt="Dendo on Google Play" /></a>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-03-dark.svg" /><img src="assets/h-03-light.svg" width="100%" alt="03 · Stack" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/h-03-dark.svg" /><img src="assets/h-03-light.svg" width="100%" alt="03 · Stack" /></picture> -->
 
 <img src="assets/stack.svg" width="100%" alt="Tech stack. Languages: Java, TypeScript, Python, SQL. Backend: Spring Boot, NestJS, Prisma, Socket.IO, REST and JWT. Mobile and web: React Native, React, Next.js, Tailwind CSS. AI and LLM: GenAI, LangChain, LangGraph, RAG, Genkit, ChromaDB. Data: PostgreSQL, PostGIS, Redis, MySQL, Supabase. Cloud and DevOps: AWS, Azure, Docker, GitHub Actions, nginx." />
 
